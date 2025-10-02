@@ -25,12 +25,13 @@ pip install openai numpy python-dotenv
 ``` bash    
 OPENAI_API_KEY=sk-your-key-here
 ```
+--- 
 
 ## Verify environment variable
 ``` bash
 python -c "import os; print(os.getenv('OPENAI_API_KEY'))"
 ```
-
+--- 
 
 Should print your OpenAI API key.
 
@@ -39,3 +40,5 @@ Should print your OpenAI API key.
 
 python main.py
 ```
+
+--- 
