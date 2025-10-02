@@ -22,9 +22,9 @@ pip install openai numpy python-dotenv
 
 
 ## Create a .env file in the project root
-
+``` bash    
 OPENAI_API_KEY=sk-your-key-here
-
+```
 
 ## Verify environment variable
 ``` bash
