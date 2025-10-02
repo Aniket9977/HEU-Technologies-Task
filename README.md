@@ -1,30 +1,41 @@
-# HEU-Technologies-Task# Mini Agentic Pipeline
+# Mini Agentic Pipeline
 
-This project implements a **mini agentic pipeline** that:
-
-- Retrieves relevant context from a small knowledge base (KB).
-- Uses an LLM to reason and decide the next step.
-- Executes an action via a tool (CSV, API, or web search).
-- Produces a final answer along with a clear reasoning trace.
-
-
-
+This project implements a **mini agentic pipeline** that retrieves context from a knowledge base, uses an LLM to reason about the next step, and optionally executes an external tool (like a CSV lookup) before returning the final answer.
 
 ---
 
-## Requirements
+## Setup Instructions
 
-- Python ≥ 3.9
-- [OpenAI Python SDK](https://pypi.org/project/openai/) ≥ 2.0.1
-- numpy
-- python-dotenv (for loading environment variables)
+1. **Clone the repository**
 
-Install dependencies:
+```bash
+git clone <your-repo-url>
+cd mini_agent_pipeline
+```
 
+--- 
+
+## Install dependencies
 ```bash
 pip install openai numpy python-dotenv
 ```
 
----
+
+## Create a .env file in the project root
+
+OPENAI_API_KEY=sk-your-key-here
 
 
+## Verify environment variable
+``` bash
+python -c "import os; print(os.getenv('OPENAI_API_KEY'))"
+```
+
+
+Should print your OpenAI API key.
+
+## Run the pipeline
+``` bash    
+
+python main.py
+```
