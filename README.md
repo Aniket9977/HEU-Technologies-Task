@@ -94,3 +94,11 @@ Only a CSV lookup tool is implemented. Adding multiple tools will require tool s
 
 ## Environment Key Handling
 The pipeline requires OPENAI_API_KEY in .env. If missing, initialization will fail.
+
+
+
+# Video Link
+```bash
+https://www.youtube.com/watch?v=ULuiJOHk3oc
+
+```
